@@ -2,6 +2,7 @@ import { printMessage, getType, addNumbers, reverseString } from './functions';
 
 describe('Basic TypeScript Functionality Tests', () => {
 
+// TESTING PRINT FUNCTION
   describe('Print Function Tests', () => {
     it('should print the correct message', () => {
       const consoleSpy = jest.spyOn(console, 'log');
@@ -11,7 +12,7 @@ describe('Basic TypeScript Functionality Tests', () => {
       consoleSpy.mockRestore();
     });
   });
-
+  // testing the types
   describe('Type Getting Tests', () => {
     it('should return the correct type for a string', () => {
       const value = 'Hello TypeScript';
@@ -32,7 +33,7 @@ describe('Basic TypeScript Functionality Tests', () => {
     });
   });
   
-
+  // testing the arithmetic functions
   describe('Arithmetic Function Tests', () => {
     it('should correctly add two numbers', () => {
       const num1 = 5;
@@ -42,6 +43,7 @@ describe('Basic TypeScript Functionality Tests', () => {
     });
   });
 
+  //testing string manipulation
   describe('String Manipulation Tests', () => {
     it('should correctly reverse a string', () => {
       const str = 'TypeScript';
